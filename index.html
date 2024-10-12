@@ -12,7 +12,7 @@
   .then((res) => res.text())
   .then((text) => {
     // do something with "text"
-    alert(text);
+    document.getElementById('q1').innerHTML = 'your tip has been submitted!';
    })
   .catch((e) => console.error(e));
     </script>
