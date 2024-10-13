@@ -14,6 +14,7 @@
     // do something with "text"
       let doc = new DOMParser().parseFromString(text, 'text/html')
     document.getElementById('q1').innerHTML =doc.querySelector('p').innerHTML;
+    document.getElementById('q1an').innerHTML =doc.querySelector('p')[1].innerHTML;
    })
   .catch((e) => console.error(e));
     </script>
@@ -25,7 +26,7 @@
                 <label for="question1" id="q1">1. سوال اول چیست؟</label>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="question1" id="q1a" value="option1">
-                    <label class="form-check-label" for="q1a">گزینه 1</label>
+                    <label class="form-check-label" for="q1a" id="q1an">گزینه 1</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="question1" id="q1b" value="option2">
