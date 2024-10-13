@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آزمون چهارگزینه‌ای</title>
+    <title>آزمون آئین نامه موتور سیکلت</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
 </head>
 <body>
@@ -14,7 +14,6 @@
     // do something with "text"
       let doc = new DOMParser().parseFromString(text, 'text/html')
     document.getElementById('q1').innerHTML =doc.querySelector('p').innerHTML;
-    alert(doc.querySelector('p').innerHTML);
    })
   .catch((e) => console.error(e));
     </script>
