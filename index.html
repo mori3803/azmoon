@@ -8,14 +8,13 @@
 </head>
 <body>
     <script>
-        fetch("azmoon.txt")
+   fetch("azmoon.txt")
   .then((res) => res.text())
   .then((text) => {
     // do something with "text"
     //let doc = new DOMParser().parseFromString(text, 'text/html')
     document.getElementById('q1').innerHTML =document.querySelector('p').innerHTML;
-    alert(document.querySelectorAll('p')[1].innerHTML);
-    document.getElementById('q1an').innerHTML =document.querySelectorAll('p')[1].innerHTML;
+    document.getElementById('q1an1').innerHTML =document.querySelectorAll('p')[1].innerHTML;
       
    })
   .catch((e) => console.error(e));
@@ -28,7 +27,7 @@
                 <label for="question1" id="q1">1. سوال اول چیست؟</label>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="question1" id="q1a" value="option1">
-                    <label class="form-check-label" for="q1a" id="q1an">گزینه 1</label>
+                    <label class="form-check-label" for="q1a" id="q1an1">گزینه 1</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="question1" id="q1b" value="option2">
