@@ -14,8 +14,9 @@
     // do something with "text"
       let doc = new DOMParser().parseFromString(text, 'text/html')
     document.getElementById('q1').innerHTML =doc.querySelector('p').innerHTML;
+    alert(doc.querySelector('p')[1].innerHTML);
     document.getElementById('q1an').innerHTML =doc.querySelector('p')[1].innerHTML;
-      alert(doc.querySelector('p')[1].innerHTML);
+      
    })
   .catch((e) => console.error(e));
     </script>
