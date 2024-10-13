@@ -13,7 +13,7 @@
   .then((text) => {
     // do something with "text"
       let doc = new DOMParser().parseFromString(text, 'text/html')
-    document.getElementById('q1').innerHTML =doc.querySelector('p');
+    document.getElementById('q1').innerHTML =doc.querySelector('p').innerHTML;
    })
   .catch((e) => console.error(e));
     </script>
