@@ -84,8 +84,8 @@
   .then((res) => res.text())
   .then((text) => {
     // do something with "text"
-    //let doc = new DOMParser().parseFromString(text, 'text/html')
-    document.getElementById('q1').innerHTML =document.querySelector('p').innerHTML;
+    let doc = new DOMParser().parseFromString(text, 'text/html')
+    document.getElementById('q1').innerHTML =doc.querySelector('p').innerHTML;
     document.getElementById('q1an1').innerHTML =document.querySelectorAll('p')[1].innerHTML;
       
    })
